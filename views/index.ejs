@@ -1,0 +1,18 @@
+<head>
+    <title>Mini Message Board</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <h1>Mini Message Board</h1>
+    <a href="/new">New Message</a>
+    <h3>Messages;</h3>
+    <ul>
+        <% messages.forEach(message => { %>
+            <li>
+                <p><span style="font-weight: bold;">Message Text: </span><%= message.text %></p>
+                <a href="/details/<%= message.id %>">Get Details</a>
+            </li>
+        <% }) %>
+    </ul>
+</body>
