@@ -10,7 +10,7 @@
     <ul>
         <% messages.forEach(message => { %>
             <li>
-                <p><span style="font-weight: bold;">Message Text: </span><%= message.text %></p>
+                <p><span style="font-weight: bold;">Message Text: </span><%= message.message %></p>
                 <a href="/details/<%= message.id %>">Get Details</a>
             </li>
         <% }) %>
